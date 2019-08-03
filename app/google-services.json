@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "841126087099",
+    "firebase_url": "https://fir-damo-ef3ed.firebaseio.com",
+    "project_id": "fir-damo-ef3ed",
+    "storage_bucket": "fir-damo-ef3ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841126087099:android:a40ed6eb08e920be",
+        "android_client_info": {
+          "package_name": "com.example.drivercab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841126087099-ra7ub9ir3avq74bf6575tbe2j6kkldle.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.drivercab",
+            "certificate_hash": "139a51528506b1f4a7d362e52218c651a4bfbdfc"
+          }
+        },
+        {
+          "client_id": "841126087099-646s3c36562vha6tjuojc3a4ok18c4ll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7GfLoBlzeU_t1hvDsooF7tfKSfm13yhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841126087099-646s3c36562vha6tjuojc3a4ok18c4ll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

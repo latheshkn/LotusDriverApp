@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#460c17</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlaue">#6D9527B0</color>
+    <color name="colorwhite">#ffffff</color>
+    <color name="colorred">#460c17</color>
+    <color name="colorlight">#E2D7D3</color>
+    <color name="colorgreen">#CDDC39</color>
+    <color name="colorlightblue">#00BCD4</color>
+    <color name="mahro">#BC88053E</color>
+    <color name="rediss">#8BC34A</color>
+    <color name="white">#ffffff</color>
+    <color name="yellow">#f7ed00</color>
+    <color name="yellowlight">#e4da00</color>
+    <color name="lemon">#fffa82</color>
+    <color name="lemonlight">#fff747</color>
+    <color name="cream">#74EAFFD0</color>
+    <color name="homepage_pf">#6D9527B0</color>
+
+</resources>

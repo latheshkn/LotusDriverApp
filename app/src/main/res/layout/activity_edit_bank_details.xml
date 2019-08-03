@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EditBankDetailsActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbankdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/colorred"
+        app:title="Bank Details update"/>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/toolbankdetails"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+    <TextView
+        android:id="@+id/payeename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbankdetails"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Payee Name"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/edtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/payeename"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Payee Name"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/txtifsc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edtname"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="IFSC Code"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/edtifsc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtifsc"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="IFSC Code"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/txtaccountno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edtifsc"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Bank Account Number"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/edtaccountno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtaccountno"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Enter Bank Account Number"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/txtcnfrm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edtaccountno"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Confirm Bank Account Number"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/edtcnfrm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtcnfrm"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="confirm Bank Account Number"
+        android:layout_marginLeft="10dp"/>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="0.7dp"
+        app:layout_constraintTop_toBottomOf="@+id/edtcnfrm"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorred"/>
+    <TextView
+        android:id="@+id/txtcamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Attach Cancelled Cheque or Passbook photo"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+    <ImageView
+        android:id="@+id/imgcamera"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtcamera"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/profile"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+    <Button
+        android:id="@+id/btncontinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imgcamera"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Continue"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

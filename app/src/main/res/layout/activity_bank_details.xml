@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.BankDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolpayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/colorred"
+        app:title="Payment Details"
+        app:titleTextColor="@color/white"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintbank"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolpayment"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/colorBlaue">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="BANK ACCOUNT"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/constraintbank"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtbank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank account number"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:id="@+id/txtedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="Edit"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/colorBlaue"
+                />
+            <TextView
+                android:id="@+id/txtaccountno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/txtbank"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="xxxxxxxx224"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/txtifsc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/txtaccountno"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Branch IFSC code"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txtifscno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/txtifsc"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="citi000004"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:id="@+id/txtbankname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/txtifscno"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Bank name"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txtbanknameenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/txtbankname"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="CITI BANK"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:id="@+id/txtbname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/txtbanknameenter"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="BANGALORE "
+                android:layout_marginLeft="30dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EditCardDocument">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tooll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       app:title="Edit Car Document">
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/txtreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tooll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Car Registration Date"
+        android:layout_margin="20dp"/>
+    <EditText
+        android:id="@+id/edtreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtreg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Car registration date"
+        android:layout_margin="20dp"
+        android:inputType="date"
+        />
+    <TextView
+        android:id="@+id/txtmanu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edtreg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Car Manufacturing Date"
+        android:layout_margin="20dp"/>
+    <EditText
+        android:id="@+id/edtmanu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtmanu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Car manufacturing date"
+        android:layout_margin="20dp"
+        android:inputType="date"
+        />
+    <TextView
+        android:id="@+id/txtattach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edtmanu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Attach Registration Certification Photo"
+        android:layout_margin="20dp"/>
+    <ImageView
+        android:id="@+id/imgcam"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtattach"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="280dp"
+        android:src="@drawable/cam"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imgcam"
+        android:text="Continue"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/name_bck"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

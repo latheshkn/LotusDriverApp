@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SettingActivity">
+
+    <TextView
+        android:id="@+id/txttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Setting"
+        android:gravity="center"
+        android:padding="15dp"
+        android:background="@color/colorlight"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txttitle"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imglock"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/booking"/>
+
+            <TextView
+                android:id="@+id/txtdriverlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imglock"
+                android:text="Driver login/logout"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Switch
+                android:id="@+id/seekbardriverlogin"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="25dp"
+                android:scrollbarSize="@dimen/cardview_compat_inset_shadow"
+                />
+
+            <ImageView
+                android:id="@+id/imgduty"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/imglock"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/onduty"/>
+
+            <TextView
+                android:id="@+id/txtdriverduty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/seekbardriverlogin"
+                app:layout_constraintStart_toEndOf="@+id/imgduty"
+                android:text="Driver on / off duty"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Switch
+                android:id="@+id/seekdriverduty"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekbardriverlogin"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/colorBlaue"
+
+                />
+
+            <ImageView
+                android:id="@+id/incentive"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/imgduty"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/coin"/>
+
+            <TextView
+                android:id="@+id/txtdriverincentive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/seekdriverduty"
+                app:layout_constraintStart_toEndOf="@+id/incentive"
+                android:text="Driver incentive"
+                android:textSize="15sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                />
+
+            <Switch
+                android:id="@+id/seekdriverincentive"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekdriverduty"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/colorBlaue"
+                />
+
+            <ImageView
+                android:id="@+id/cancelled"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintTop_toBottomOf="@+id/incentive"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/bookmark"/>
+
+            <TextView
+                android:id="@+id/txtcancelled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/seekdriverincentive"
+                app:layout_constraintStart_toEndOf="@+id/cancelled"
+                android:text="Driver cancelled booking"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:layout_marginTop="30dp"
+                />
+
+            <Switch
+                android:id="@+id/seekcancelled"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekdriverincentive"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/colorBlaue"
+
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtothersetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/card1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Language Setting"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        android:padding="15dp"
+        android:background="@color/colorlight"
+
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtothersetting">
+
+        <ImageView
+            android:id="@+id/imglanguage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/language"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txtlanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imglanguage"
+            android:text="Language:"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+
+            android:padding="15dp"
+            />
+        <TextView
+            android:id="@+id/txtlanguageselected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtlanguage"
+            android:text="English U.S"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:padding="15dp"
+            />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/rightarrow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="20dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_dashboard_"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_track_changes_black"
+            android:title="Track" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_event_note"
+            android:title="Fleet" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/coin"
+            android:title="Incentive" />
+        <item
+            android:id="@+id/nav_shift"
+            android:icon="@drawable/ic_sync"
+            android:title="Shift" />
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/message"
+            android:title="Massage" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/setting"
+            android:title="Setting" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_About"
+                android:icon="@drawable/ic_error_outline"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_support"
+                android:icon="@drawable/phonecall"
+                android:title="Support" />
+        </menu>
+    </item>
+
+</menu>

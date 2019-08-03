@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.drivercab">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.EditAdhaaraNumberActivity"
+            android:parentActivityName=".Activities.DriverDocumentsActivity"></activity>
+        <activity
+            android:name=".Activities.EditBadgeActivity"
+            android:parentActivityName=".Activities.DriverDocumentsActivity" />
+        <activity
+            android:name=".Activities.EditNameActivity"
+            android:parentActivityName=".Activities.EditdriverDocuments" />
+        <activity android:name=".Activities.EditLicenseActivity" />
+        <activity android:name=".Activities.EditNumber"
+            android:parentActivityName=".Activities.DriverDocumentsActivity"/>
+        <activity android:name=".Activities.EditdriverDocuments" />
+        <activity android:name=".Activities.SlpashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.NtificationActivity" />
+        <activity
+            android:name=".Activities.ShiftActivity"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.LAnguageActivity"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.EditCardDocument"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.ContactActivity"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.AboutActivity"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.Support"
+            android:parentActivityName=".Activities.MapActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.GetOtpActivity" />
+        <activity android:name=".Activities.SignInActivity" />
+        <activity
+            android:name=".Activities.EditBankDetailsActivity"
+            android:parentActivityName=".Activities.MainActivity" />
+
+        <activity android:name=".Activities.BankDetailsActivity" />
+        <activity android:name=".Activities.BookingDetails" />
+        <activity android:name=".Activities.BalanceAndPaymentActivity" />
+        <activity android:name=".Activities.VehicleOnRoad" />
+        <activity android:name=".Activities.WorkDetailsActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Activities.MapActivity"
+            android:label="@string/title_activity_map" />
+        <activity android:name=".Activities.SettingActivity" />
+        <activity android:name=".Activities.CardDocumentsEditActivity" />
+        <activity android:name=".Activities.CarDocumentActivity" />
+        <activity android:name=".Activities.CarProfileActivity" />
+        <activity
+            android:name=".Activities.DriverDocumentsActivity"
+            android:parentActivityName=".Activities.DriverProfileActivity" />
+        <activity android:name=".Activities.DriverProfileActivity"
+            android:parentActivityName=".Activities.MainActivity"/>
+        <activity android:name=".Activities.FirstPage" />
+        <activity android:name=".Activities.LoginPageActivity" />
+        <activity android:name=".Activities.RegistrationPageActivity" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:targetApi="n" />
+    </application>
+
+</manifest>
