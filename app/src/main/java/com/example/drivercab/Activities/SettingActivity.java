@@ -20,6 +20,7 @@ Switch seekbardriverlogin;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
         seekbardriverlogin=findViewById(R.id.seekbardriverlogin);
+        seekbardriverlogin.setChecked(true);
 
         seekbardriverlogin.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

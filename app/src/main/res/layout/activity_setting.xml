@@ -60,6 +60,9 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginTop="25dp"
                 android:scrollbarSize="@dimen/cardview_compat_inset_shadow"
+                android:checked="true"
+
+
                 />
 
             <ImageView
@@ -92,6 +95,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/seekbardriverlogin"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="@color/colorBlaue"
+                android:checked="true"
 
                 />
 
@@ -129,6 +133,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/seekdriverduty"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="@color/colorBlaue"
+                android:checked="true"
 
                 />
 
