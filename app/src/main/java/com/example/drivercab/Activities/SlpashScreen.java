@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.Menu;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -31,11 +30,19 @@ public class SlpashScreen extends AppCompatActivity {
                 @Override
                 public void run() {
                     /* Create an Intent that will start the Menu-Activity. */
-                    Intent mainIntent = new Intent(SlpashScreen.this, MainActivity.class);
-                    SlpashScreen.this.startActivity(mainIntent);
-                    SlpashScreen.this.finish();
+                    if (SharedPrefManager.getInstance(SlpashScreen.this).isLoggedIn()){
+                        Intent intent = new Intent(SlpashScreen.this, MainActivity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                        startActivity(intent);
+                        finish();
+                    }else {
+                        Intent mainIntent = new Intent(SlpashScreen.this, SignInActivity.class);
+                        SlpashScreen.this.startActivity(mainIntent);
+                        SlpashScreen.this.finish();
+                    }
                 }
             }, SPLASH_DISPLAY_LENGTH);
 
     }
+
 }

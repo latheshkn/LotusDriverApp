@@ -15,31 +15,13 @@
         app:title="Edit  Name">
     </androidx.appcompat.widget.Toolbar>
 
-    <TextView
-        android:id="@+id/txtreg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/tooll"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="Enter driver badge number"
-        android:layout_margin="20dp"/>
-    <EditText
-        android:id="@+id/edtreg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/txtreg"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:hint="Enter driver badge number"
-        android:layout_margin="20dp"
-        android:inputType="date"
-        />
+
+
        <TextView
         android:id="@+id/txtattach"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/edtreg"
+        app:layout_constraintTop_toBottomOf="@+id/tooll"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="Attach Driver badge photo"
